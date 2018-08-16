@@ -1,0 +1,90 @@
+.content {
+    background-color: #fff;
+    .navs {
+        background-color: #fff;
+        padding: 10px;
+        ul {
+            box-shadow: 0 0 5px #ccc;
+            li {
+                width: 33.3%;
+                float: left;
+                a {
+                    display: block;
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .brand {
+        background-color: #fff;
+        padding: 0 10px;
+        img {
+            display: block;
+            width: 100%;
+        }
+        ul {
+            box-shadow: 0 0 5px #ccc;
+            padding: 10px 0;
+            li {
+                float: left;
+                width: 25%;
+            }
+            a {
+                display: block;
+            }
+        }    
+    }
+    .product {
+        overflow: hidden;
+        background-color: #fff;
+        text-align: left;
+        > img {
+            margin: 10px 0;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+        padding: 0 10px;
+        li {
+            float: left;
+            width: 50%;
+            padding: 5px;
+            a {
+                box-shadow: 0 0 5px #ccc;
+                padding: 0 5px;
+                display: block;
+                overflow: hidden;
+                p {
+                    padding: 0 6px;
+                    span {
+                        color: #f30;
+                        margin-right: 2px;
+                        font-size: 12px;
+                        del {
+                            
+                            color: #ccc;
+                        }
+                    } 
+                    &:last-of-type {
+                        text-align: center;
+                    }  
+                }
+                > span {
+                    text-align: center;
+                    display: block;
+                    width: 80px;
+                    height: 31px;
+                    line-height: 31px;
+                    background-color: #006699;
+                    color: #FFF;
+                    margin: 10px auto;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}

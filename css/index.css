@@ -1,0 +1,89 @@
+.content {
+  background-color: #fff;
+}
+.content .navs {
+  background-color: #fff;
+  padding: 10px;
+}
+.content .navs ul {
+  box-shadow: 0 0 5px #ccc;
+}
+.content .navs ul li {
+  width: 33.3%;
+  float: left;
+}
+.content .navs ul li a {
+  display: block;
+}
+.content .navs ul li a img {
+  width: 100%;
+  display: block;
+}
+.content .brand {
+  background-color: #fff;
+  padding: 0 10px;
+}
+.content .brand img {
+  display: block;
+  width: 100%;
+}
+.content .brand ul {
+  box-shadow: 0 0 5px #ccc;
+  padding: 10px 0;
+}
+.content .brand ul li {
+  float: left;
+  width: 25%;
+}
+.content .brand ul a {
+  display: block;
+}
+.content .product {
+  overflow: hidden;
+  background-color: #fff;
+  text-align: left;
+  padding: 0 10px;
+}
+.content .product > img {
+  margin: 10px 0;
+}
+.content .product img {
+  width: 100%;
+  display: block;
+}
+.content .product li {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.content .product li a {
+  box-shadow: 0 0 5px #ccc;
+  padding: 0 5px;
+  display: block;
+  overflow: hidden;
+}
+.content .product li a p {
+  padding: 0 6px;
+}
+.content .product li a p span {
+  color: #f30;
+  margin-right: 2px;
+  font-size: 12px;
+}
+.content .product li a p span del {
+  color: #ccc;
+}
+.content .product li a p:last-of-type {
+  text-align: center;
+}
+.content .product li a > span {
+  text-align: center;
+  display: block;
+  width: 80px;
+  height: 31px;
+  line-height: 31px;
+  background-color: #006699;
+  color: #FFF;
+  margin: 10px auto;
+  border-radius: 3px;
+}

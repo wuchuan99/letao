@@ -1,0 +1,59 @@
+html,body,img,p,div,a,ul,ol,li,form,input,h4 {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent; 
+}
+html {
+    touch-action: none;
+}
+body {
+    font-family: '微软雅黑';
+    font-size: 14px;
+}
+ul,ol {
+    list-style: none;
+}
+a,
+a:hover {
+    
+    color: #666;
+    text-decoration: none;
+}
+input {
+    border: none;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.header {
+    background-color: #006699;
+}
+.header .mui-title {
+    color: #fff;
+}
+.header .mui-icon-search {
+    color: #fff;
+}
+.nav {
+    background-color: #006699;
+}
+.nav .mui-tab-item {
+    color: #fff;
+}
+.nav .mui-active span {
+    color: darkorange;
+}
