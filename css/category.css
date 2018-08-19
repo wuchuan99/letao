@@ -1,0 +1,44 @@
+.mui-content {
+  height: 100%;
+}
+.mui-content .content-l {
+  height: 100%;
+  width: 80px;
+  position: relative;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+}
+.mui-content .content-l li.active {
+  background-color: #efeff4;
+}
+.mui-content .content-l a {
+  display: block;
+  padding: 8px 15px;
+  border-bottom: 1px solid #ccc;
+}
+.mui-content .content-l li:first-of-type a {
+  border-top: 1px solid #ccc;
+}
+.mui-content .content-r {
+  height: 100%;
+  margin-left: 90px;
+  position: relative;
+}
+.mui-content .content-r ul {
+  margin-top: 10px;
+}
+.mui-content .content-r ul li {
+  width: 33.33%;
+  float: left;
+}
+.mui-content .content-r ul li a {
+  display: block;
+  background-color: #fff;
+}
+.mui-content .content-r ul li a img {
+  display: block;
+  width: 100%;
+}
+.mui-content .content-r ul li a p {
+  text-align: center;
+}

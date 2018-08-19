@@ -1,0 +1,40 @@
+.mui-content {
+  background-color: #fff;
+  height: 100%;
+}
+.mui-content .container {
+  padding: 10px;
+  overflow: hidden;
+}
+.mui-content .container form {
+  border: 1px solid #006699;
+  position: relative;
+  margin-bottom: 16px;
+}
+.mui-content .container form input {
+  border: none;
+  height: 28px;
+  margin-bottom: 0;
+}
+.mui-content .container form input[type=text] {
+  padding: 0 70px 0 10px;
+  font-size: 14px;
+}
+.mui-content .container form input[type=button] {
+  width: 60px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #006699;
+  border-radius: 0;
+  color: #fff;
+}
+.mui-content .container .sou .clearfix {
+  margin-bottom: 12px;
+}
+.mui-content .container .sou a {
+  color: #8f8f94;
+}
+.mui-content .container .sou a.mui-navigate-right::after {
+  right: 9999px;
+}

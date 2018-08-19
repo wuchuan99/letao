@@ -1,0 +1,13 @@
+.mui-content {
+  height: 100%;
+  background-color: #fff;
+}
+.mui-content .sd::after {
+  left: 0;
+}
+.mui-content .logint {
+  text-align: center;
+}
+.mui-content .logint a::after {
+  right: -10000px;
+}

@@ -1,0 +1,42 @@
+.mui-content {
+    background-color: #fff;
+    height: 100%;
+    .container {
+        padding: 10px;
+        overflow: hidden;
+        form {
+            border: 1px solid #006699;
+            position: relative;
+            margin-bottom: 16px;
+            input {
+                border: none;
+                height: 28px;
+                margin-bottom: 0;
+                &[type=text] {
+                    padding: 0 70px 0 10px;
+                    font-size: 14px;
+                }
+                &[type=button] {
+                    width: 60px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    background-color: #006699;
+                    border-radius: 0;
+                    color: #fff;
+                }
+            }
+        }
+        .sou {
+            .clearfix {
+                margin-bottom: 12px;
+            }
+            a {
+                color: #8f8f94;
+                &.mui-navigate-right::after {
+                    right: 9999px;
+                }
+            }    
+        }
+    }
+}

@@ -5,11 +5,12 @@ html,body,img,p,div,a,ul,ol,li,form,input,h4 {
     -webkit-tap-highlight-color: transparent; 
 }
 html {
-    touch-action: none;
+    height: 100%;
 }
 body {
     font-family: '微软雅黑';
     font-size: 14px;
+    height: 100%;
 }
 ul,ol {
     list-style: none;
@@ -39,21 +40,24 @@ input {
 .fr {
     float: right;
 }
-.header {
+.mui-bar-nav {
     background-color: #006699;
 }
-.header .mui-title {
+.mui-bar-nav .mui-title {
     color: #fff;
 }
-.header .mui-icon-search {
+.mui-bar-nav .mui-icon-search {
     color: #fff;
 }
-.nav {
+.mui-action-back {
+    color: #fff;
+}
+.mui-bar-tab {
     background-color: #006699;
 }
-.nav .mui-tab-item {
+.mui-bar-tab .mui-tab-item {
     color: #fff;
 }
-.nav .mui-active span {
+.mui-bar-tab .mui-active span {
     color: darkorange;
 }

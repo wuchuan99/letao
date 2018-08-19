@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="assets/mui/css/iconfont.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/result.css">
+    <script src="assets/zepto/zepto.min.js"></script>
+    <script src="assets/mui/js/mui.min.js"></script>
+    <script src="js/result.js"></script>
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">网页标题</h1>
+    </header>
+    <nav class="mui-bar mui-bar-tab footer">
+        <a class="mui-tab-item" href="index.html">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="cart.html">
+            <span class="mui-icon iconfont icon-gouwuche"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="user.html">
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+    <div id="refresh">
+        <div class="container">
+            <div class="mui-row">
+                <div class="mui-col-xs-6 caidan" id="price">
+                    <a href="#">价格&nbsp;
+                        <span class="mui-icon mui-icon-arrowdown"></span>
+                    </a>
+                </div>
+                <div class="mui-col-xs-6 caidan" id="num">
+                    <a href="#">销量&nbsp;
+                        <span class="mui-icon mui-icon-arrowdown"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="product">
+                <ul class="clearfix pro">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="assets/jquery/template-web.js"></script>
+    <script type="text/template" id="temp">
+        {{each data}}
+        <li>
+            <a href="javascript:;">
+                <img src="{{$value.pic[0].picAddr}}" alt="">
+                <p>{{$value.proName}}</p>
+                <p>
+                    <span>¥{{$value.price}}</span>
+                    <span>
+                        <del>¥{{$value.oldPrice}}</del>
+                    </span>
+                </p>
+                <span>立即购买</span>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+</body>
+
+</html>
