@@ -47,6 +47,9 @@
 }
 #refresh .container .product li a p {
   padding: 0 6px;
+  word-break: break-all;
+  height: 42px;
+  overflow: hidden;
 }
 #refresh .container .product li a p span {
   color: #f30;

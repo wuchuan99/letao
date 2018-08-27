@@ -1,6 +1,6 @@
 $(function(){ 
     $('#btn').on('click', function(){
-        var word = $('#search').val();
+        var word = $('#searchs').val();
         if(!word.trim()){
             alert('搜索内容不能为空');
             return;
@@ -25,10 +25,34 @@ $(function(){
     if(localStorage.getItem('words')) {
         var words = JSON.parse(localStorage.getItem('words'));
         var html = template('temp', {data: words});
-        $('.mui-table-view').html(html);
+        $('.cun .mui-table-view').html(html);
     }
     $('.remove').on('click', function(){
         localStorage.removeItem('words');
-        $('.mui-table-view').html('');
+        $('.cun .mui-table-view').html('');
+    })
+
+    var page = 1;
+    var pageSize = 6;
+    $('#searchs').on('keyup',function(){
+        var proName = $(this).val();
+        console.log(proName);
+        $.ajax({
+            type: 'get',
+            url: '/product/queryProduct',
+            data: {
+                proName: proName,
+                page: page,
+                pageSize: pageSize 
+            },
+            success: function(res){
+                if(proName.length > 0 && res.data.length > 0){
+                    var html = template('tem', res);
+                    $('.view').html(html);
+                } else {
+                    $('.view').html('');
+                }    
+            }
+        })
     })
 })

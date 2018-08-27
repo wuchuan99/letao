@@ -5,7 +5,7 @@ $(function(){
     var newArr = newStr.split("=");
     var proName = newArr[1];
     var page = 1;
-    var pageSize = 2;
+    var pageSize = 6;
     var data = {};
     var products = {};
     var num = 1;
@@ -60,6 +60,7 @@ $(function(){
                 url: '/product/queryProduct',
                 data: data,
                 success: function(res){
+                    console.log(res);
                     for(var k in res){
                         if(k == 'data'){
                             if(!products.data){
@@ -74,6 +75,7 @@ $(function(){
                     var html = template('temp', products);
                     $('.pro').html(html);
                     var total = Math.ceil(res.count / pageSize);
+                    console.log(total);
                     data.page++;
                     if(data.page > total) {
                         flag = true;     

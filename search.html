@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/search.css">
 	<script src="assets/mui/js/mui.min.js"></script>
 	<script src="assets/zepto/zepto.min.js"></script>
+	<script src="js/common.js"></script>
 	<script src="js/search.js"></script>
 </head>
 
@@ -42,9 +43,13 @@
 	<div class="mui-content">
 		<div class="container">
 			<form action="" class="clearfix">
-				<input type="text" placeholder="搜索您喜欢的商品" id="search">
+				<input type="text" placeholder="搜索您喜欢的商品" id="searchs">
 				<input type="button" value="搜索" id="btn">
 			</form>
+			<div>
+				<ul class="view">
+				</ul>
+			</div>
 			<div class="clearfix sou">
 				<div class="clearfix">
 					<a href="#" class="fl">搜索历史</a>
@@ -63,6 +68,14 @@
 		{{each data}}
 		<li class="mui-table-view-cell">
 			<a class="mui-navigate-right">{{$value}}</a>
+		</li>
+		{{/each}}
+	</script>
+
+	<script type="text/template" id="tem">
+		{{each data}}
+		<li>
+			<a>{{$value.proName}}</a>
 		</li>
 		{{/each}}
 	</script>

@@ -24,6 +24,7 @@ $(function(){
             success: function(res){
                 if(res.success){
                     mui.toast('登陆成功');
+                    sessionStorage.setItem('user', name);
                     setTimeout(function(){
                         location.href = 'user.html';
                     },2000)

@@ -1,0 +1,26 @@
+.mui-content {
+  background-color: #fff;
+}
+.mui-content .mui-table-view::before {
+  height: 0;
+}
+.mui-content .mui-table-view.table {
+  margin-top: 0;
+}
+.mui-content .mui-table-view.table .ok {
+  text-align: center;
+}
+.mui-content .mui-table-view.table .update {
+  right: 85px;
+  color: #fff;
+  border: none;
+  background-color: #006699;
+}
+.mui-content .mui-table-view.table .delete {
+  background-color: red;
+  color: #fff;
+  border: none;
+}
+body {
+  background-color: #fff;
+}
